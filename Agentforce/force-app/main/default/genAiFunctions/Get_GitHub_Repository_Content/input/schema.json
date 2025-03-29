@@ -1,0 +1,35 @@
+{
+  "required" : [ "owner", "path", "repo" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "owner" : {
+      "title" : "owner",
+      "description" : "The owner of the repository",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "path" : {
+      "title" : "path",
+      "description" : "The path to the content in the repository",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "ref" : {
+      "title" : "ref",
+      "description" : "The name of the commit/branch/tag. Default: the repository's default branch",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "repo" : {
+      "title" : "repo",
+      "description" : "The name of the repository",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

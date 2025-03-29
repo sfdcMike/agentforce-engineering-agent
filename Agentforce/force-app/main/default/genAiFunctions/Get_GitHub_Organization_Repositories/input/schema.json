@@ -1,0 +1,35 @@
+{
+  "required" : [ "org_name" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "direction" : {
+      "title" : "direction",
+      "description" : "Direction of sort (asc or desc)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "org_name" : {
+      "title" : "org_name",
+      "description" : "The organization name to get repositories for",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "sort_by" : {
+      "title" : "sort_by",
+      "description" : "How to sort the repositories (created, updated, pushed, full_name)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "type" : {
+      "title" : "type",
+      "description" : "Type of repositories to return (all, public, private, forks, sources, member)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

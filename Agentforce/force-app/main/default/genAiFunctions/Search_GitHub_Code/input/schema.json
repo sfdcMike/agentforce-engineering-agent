@@ -1,0 +1,49 @@
+{
+  "required" : [ "search_text" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "language" : {
+      "title" : "language",
+      "description" : "Programming language to filter by",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "organization" : {
+      "title" : "organization",
+      "description" : "Organization to search within",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "per_page" : {
+      "title" : "per_page",
+      "description" : "Number of results per page (max 100)",
+      "lightning:type" : "lightning__integerType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "repository" : {
+      "title" : "repository",
+      "description" : "Repository to search in",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "search_in" : {
+      "title" : "search_in",
+      "description" : "Where to search (file, path, or blank for both)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "search_text" : {
+      "title" : "search_text",
+      "description" : "Text to search for in the code",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

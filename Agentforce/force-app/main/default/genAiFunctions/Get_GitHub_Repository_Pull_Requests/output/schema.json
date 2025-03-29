@@ -1,0 +1,28 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "error_message" : {
+      "title" : "error_message",
+      "description" : "Error message if the request failed",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "pull_requests" : {
+      "title" : "pull_requests",
+      "description" : "List of pull requests matching the criteria",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "@apexClassType/c__GetGitHubRepositoryPRsAction$PullRequestInfo"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

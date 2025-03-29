@@ -1,0 +1,42 @@
+{
+  "required" : [ "owner", "repo" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "direction" : {
+      "title" : "direction",
+      "description" : "Direction of sort (asc or desc)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "owner" : {
+      "title" : "owner",
+      "description" : "The owner of the repository",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "repo" : {
+      "title" : "repo",
+      "description" : "The name of the repository",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "sort_by" : {
+      "title" : "sort_by",
+      "description" : "Sort field (created, updated, popularity, long-running)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "state" : {
+      "title" : "state",
+      "description" : "State of pull requests to return (open, closed, or all)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

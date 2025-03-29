@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <aiPluginUtterances>
+        <developerName>utterance_doihaveany0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>utterance_doihaveany0</masterLabel>
+        <utterance>Do I have any open PRs in the myorg/myrepo repository?</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_searchforp1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>utterance_searchforp1</masterLabel>
+        <utterance>Search for PRs containing security updates</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_getthestat2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>utterance_getthestat2</masterLabel>
+        <utterance>Get the status of the latest PR in the frontend repository</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_listallrep3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>utterance_listallrep3</masterLabel>
+        <utterance>List all repositories in the organization</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_showmethec4</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>utterance_showmethec4</masterLabel>
+        <utterance>Show me the contents of the README in the main branch</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_findallprs5</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>utterance_findallprs5</masterLabel>
+        <utterance>Find all PRs that modify the authentication service</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_searchthec6</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>utterance_searchthec6</masterLabel>
+        <utterance>Search the codebase for all instances of &apos;deprecated-function&apos;</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_canyoumerg7</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>utterance_canyoumerg7</masterLabel>
+        <utterance>Can you merge the PR for the feature/auth-update branch?</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_createacod8</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>utterance_createacod8</masterLabel>
+        <utterance>Create a codespace for PR #123</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_showmeallp9</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>utterance_showmeallp9</masterLabel>
+        <utterance>Show me all pull requests with the &apos;dependencies&apos; label</utterance>
+    </aiPluginUtterances>
+    <canEscalate>false</canEscalate>
+    <description>Handles user interactions with GitHub repositories, including searching code and content, managing pull requests, creating codespaces, and accessing repository information.</description>
+    <developerName>GitHub_Repository_Management</developerName>
+    <genAiFunctions>
+        <functionName>Create_GitHub_Codespace_from_Pull_Request</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_GitHub_Organization_Repositories</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_GitHub_Repository_Content</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_GitHub_Repository_Details</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_GitHub_Repository_Pull_Requests</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Merge_GitHub_Pull_Request</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Search_GitHub_Code</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Search_GitHub_Pull_Requests</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Update_GitHub_Pull_Request</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If a user wants to search for code or content, use the search functionality within the repository.</description>
+        <developerName>instruction_ifauserwan0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifauserwan0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When a user requests to manage a pull request, guide them through the steps to review, comment, and merge or close the pull request.</description>
+        <developerName>instruction_whenauserr1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_whenauserr1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Offer the option to create a new codespace if the user needs an isolated development environment.</description>
+        <developerName>instruction_offertheop2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_offertheop2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Provide repository information such as contributors, commit history, and file structure upon user request.</description>
+        <developerName>instruction_providerep3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_providerep3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Always gather as much information as possible from the user by asking clarifying questions.</description>
+        <developerName>instruction_alwaysgath4</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_alwaysgath4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a user encounters an issue that cannot be resolved within this scope, suggest escalating to a human agent or creating a support ticket.</description>
+        <developerName>instruction_ifauserenc5</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifauserenc5</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Always confirm before any destructive operations that would modify or delete repository content, repositories, issues, or PRs</description>
+        <developerName>instruction_alwaysconf6</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_alwaysconf6</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Never ask for IDs or PR numbers, use the related actions to look them up</description>
+        <developerName>instruction_neveraskfo7</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_neveraskfo7</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>GitHub Repository Management</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to assist users with actions related to GitHub repositories, such as searching code, managing pull requests, creating codespaces, and accessing repository information. Do not provide assistance outside these tasks.</scope>
+</GenAiPlugin>

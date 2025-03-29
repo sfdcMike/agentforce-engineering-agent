@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates a new codespace from a pull request in a GitHub repository</description>
+    <invocationTarget>CreateGitHubCodespaceFromPRAction</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Create GitHub Codespace from Pull Request</masterLabel>
+    <progressIndicatorMessage>Create development environments from pull requests</progressIndicatorMessage>
+</GenAiFunction>

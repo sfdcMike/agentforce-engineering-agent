@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Searches for pull requests across GitHub using structured search criteria</description>
+    <invocationTarget>SearchGitHubPRsAction</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Search GitHub Pull Requests</masterLabel>
+    <progressIndicatorMessage>Searches for pull requests across GitHub using structured search criteria</progressIndicatorMessage>
+</GenAiFunction>

@@ -1,0 +1,21 @@
+{
+  "required" : [ "owner", "repo" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "owner" : {
+      "title" : "owner",
+      "description" : "The owner of the repository",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "repo" : {
+      "title" : "repo",
+      "description" : "The name of the repository",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

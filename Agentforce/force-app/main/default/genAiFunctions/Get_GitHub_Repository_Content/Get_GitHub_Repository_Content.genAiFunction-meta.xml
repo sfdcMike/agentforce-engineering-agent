@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Retrieves content (file or directory listing) from a GitHub repository</description>
+    <invocationTarget>GetGitHubRepositoryContentAction</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Get GitHub Repository Content</masterLabel>
+    <progressIndicatorMessage>Retrieves content (file or directory listing) from a GitHub repository</progressIndicatorMessage>
+</GenAiFunction>

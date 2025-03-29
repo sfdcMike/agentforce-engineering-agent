@@ -1,0 +1,49 @@
+{
+  "required" : [ "pull_number", "repository" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "base" : {
+      "title" : "base",
+      "description" : "Branch to pull changes into",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "body" : {
+      "title" : "body",
+      "description" : "New body/description for the PR",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "pull_number" : {
+      "title" : "pull_number",
+      "description" : "The number that identifies the PR",
+      "lightning:type" : "lightning__integerType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "repository" : {
+      "title" : "repository",
+      "description" : "Repository containing the PR (format: owner/repo)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "state" : {
+      "title" : "state",
+      "description" : "State of the PR (open or closed)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "title" : {
+      "title" : "title",
+      "description" : "New title for the PR",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
