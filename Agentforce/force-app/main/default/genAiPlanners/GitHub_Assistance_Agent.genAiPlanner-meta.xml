@@ -5,6 +5,9 @@
         <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
     </genAiFunctions>
     <genAiPlugins>
+        <genAiPluginName>Slack__Slack</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
         <genAiPluginName>p_16jKd00000006Jx_Branch_Management</genAiPluginName>
     </genAiPlugins>
     <genAiPlugins>
