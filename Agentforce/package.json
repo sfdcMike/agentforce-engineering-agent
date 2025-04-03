@@ -38,4 +38,9 @@
       "eslint"
     ]
   }
+  "heroku": {
+    "install": "cd Agentforce/LLMConnector && npm install",
+    "start": "cd Agentforce/LLMConnector && node server.js",
+    "build": "cd Agentforce/LLMConnector"
+  }
 }
