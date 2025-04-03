@@ -8,10 +8,6 @@ fastify.get('/', async (request, reply) => {
   reply.send({ message: 'LLM Connector is running' });
 });
 
-fastify.post('/chat/completions', async (request, reply) => {
-  // ... your chat completion logic ...
-});
-
 fastify.get('/health', async (request, reply) => {
   reply.send({ status: 'ok' });
 });
