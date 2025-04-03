@@ -8,10 +8,6 @@ fastify.get('/', async (request, reply) => {
   reply.send({ message: 'LLM Connector is running' });
 });
 
-fastify.get('/health', async (request, reply) => {
-  reply.send({ status: 'ok' });
-});
-
 fastify.post('/chat/completions', async (request, reply) => {
   if (request.headers['api-key'] !== process.env.API_TOKEN) {
     reply.status(401).send({ error: 'Unauthorized' });
