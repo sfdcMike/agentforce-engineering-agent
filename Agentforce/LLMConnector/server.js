@@ -1,3 +1,8 @@
+process.env.TRANSFORMERS_CACHE = '/tmp/transformers_cache'; // Or any other writable directory
+        const fs = require('fs');
+        if (!fs.existsSync('/tmp/transformers_cache')){
+            fs.mkdirSync('/tmp/transformers_cache', { recursive: true });
+        }
 const fastify = require('fastify')({ logger: true });
 const { HfInference } = require('@huggingface/inference');
 const { AutoTokenizer } = require('@huggingface/transformers'); // Import AutoTokenizer
