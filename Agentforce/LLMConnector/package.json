@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "@huggingface/inference": "^3.6.2",
+    "@huggingface/transformers": "^3.4.2",
     "dotenv": "^16.4.7",
     "fastify": "^5.2.2"
   }
