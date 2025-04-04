@@ -19,7 +19,8 @@ fastify.post('/chat/completions', async (request, reply) => {
     const userMessages = messages.filter((message) => message.role === 'user');
 
     const response = await hf.chatCompletion({
-      model: 'codellama/CodeLlama-7b-Instruct-hf', // Replace with your model
+      //model: 'codellama/CodeLlama-7b-Instruct-hf', // fatty model but worth it if you can.
+      model: 'meta-llama/Llama-2-7b-chat-hf',// smaller model, swap with the one above if you've got 13 GB
       messages: [...systemMessages, ...userMessages],
       provider: 'hf-inference',
       max_tokens: 500,
