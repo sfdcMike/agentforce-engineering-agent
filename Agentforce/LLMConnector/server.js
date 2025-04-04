@@ -1,48 +1,31 @@
-const fastify = require('fastify')({ logger: true });
-const { HfInference } = require('@huggingface/inference');
-require('dotenv').config();
-
-const hf = new HfInference(process.env.HUGGINGFACE_API_KEY);
-
-fastify.get('/', async (request, reply) => {
-  reply.send({ message: 'LLM Connector is running' });
-});
-
 fastify.post('/chat/completions', async (request, reply) => {
-  if (request.headers['api-key'] !== process.env.API_TOKEN) {
-    reply.status(401).send({ error: 'Unauthorized' });
-    return;
-  }
+  console.log("POST /chat/completions route hit");
+  console.log("Request headers:", request.headers);
+  console.log("Request body:", request.body);
   try {
-    const { messages } = request.body;
-    const systemMessages = messages.filter((message) => message.role === 'system');
-    const userMessages = messages.filter((message) => message.role === 'user');
+      // Remove the authentication check for now (TEMPORARY)
+      // if (request.headers['api-key'] !== process.env.API_TOKEN) {
+      //   reply.status(401).send({ error: 'Unauthorized' });
+      //   return;
+      // }
 
-    const response = await hf.chatCompletion({
-      //model: 'codellama/CodeLlama-7b-Instruct-hf', // fatty model but worth it if you can.
-      model: 'meta-llama/Llama-2-7b-chat-hf',// smaller model, swap with the one above if you've got 13 GB
-      messages: [...systemMessages, ...userMessages],
-      provider: 'hf-inference',
-      max_tokens: 500,
-    });
+      const { messages } = request.body;
+      const systemMessages = messages.filter((message) => message.role === 'system');
+      const userMessages = messages.filter((message) => message.role === 'user');
 
-    reply.send(response);
+      console.log("Calling Hugging Face API");
+      const response = await hf.chatCompletion({
+          model: 'codellama/CodeLlama-7b-Instruct-hf',
+          messages: [...systemMessages, ...userMessages],
+          provider: 'hf-inference',
+          max_tokens: 500,
+      });
+
+      console.log("Hugging Face API response:", response);
+      reply.send(response);
   } catch (error) {
-    reply.status(500).send({ error: error.message });
+      console.error("Error in /chat/completions:", error);
+      console.error(error); // Log the entire error object
+      reply.status(500).send({ error: error.message });
   }
 });
-
-fastify.get('/health', async (request, reply) => {
-  reply.send({ status: 'ok' });
-});
-
-const start = async () => {
-  try {
-    await fastify.listen({ port: process.env.PORT || 3000, host: '0.0.0.0' }); // Use process.env.PORT
-  } catch (err) {
-    fastify.log.error(err);
-    process.exit(1);
-  }
-};
-
-start();
