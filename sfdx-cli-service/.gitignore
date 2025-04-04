@@ -1,2 +1,3 @@
 sfdx-cli-service/.env
 sfdx-cli-service/node_modules/
+node_modules/
