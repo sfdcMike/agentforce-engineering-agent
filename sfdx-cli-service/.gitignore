@@ -1,2 +1,4 @@
 sfdx-cli-service/.env
 sfdx-cli-service/node_modules/
+DevOne/.env
+devone/.env
