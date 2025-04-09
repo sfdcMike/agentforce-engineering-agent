@@ -1,0 +1,28 @@
+{
+  "required" : [ "definitionFilePath", "durationDays", "orgAlias" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "definitionFilePath" : {
+      "title" : "definitionFilePath",
+      "description" : "a JSON payload of the following structure:\n{\n  \"orgName\": \"orgAlias\", //get from user\n  \"edition\": \"Developer\",\n  \"features\": [\"EnableSetPasswordInApi\"],\n  \"settings\": {\n    \"lightningExperienceSettings\": {\n      \"enableS1DesktopEnabled\": true\n    },\n    \"mobileSettings\": {\n      \"enableS1EncryptedStoragePref\": false\n    }\n  }\n}",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "durationDays" : {
+      "title" : "durationDays",
+      "description" : "the number of days the scratch org should last. use 7 unless a shorter time is requested.",
+      "lightning:type" : "lightning__integerType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "orgAlias" : {
+      "title" : "orgAlias",
+      "description" : "the name you will give your scratch org. ",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

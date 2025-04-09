@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates a Salesforce scratch org.</description>
+    <invocationTarget>ScratchOrgCreator</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Create Scratch Org</masterLabel>
+    <progressIndicatorMessage>Creating a scratch org...</progressIndicatorMessage>
+</GenAiFunction>

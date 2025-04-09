@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This is for when you need to create a scratch org.</description>
+    <developerName>Salesforce_CLI_Actions</developerName>
+    <genAiFunctions>
+        <functionName>Create_Scratch_Org</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Always ask what the scratch org should be called.</description>
+        <developerName>instruction_alwaysaskw0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_alwaysaskw0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Assume the Duration should be 7 unless otherwise specified.</description>
+        <developerName>instruction_assumethed1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_assumethed1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Salesforce CLI Actions</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>When you are asked to create a scratch org, you can collect information from the user and then create the scratch org.</scope>
+</GenAiPlugin>

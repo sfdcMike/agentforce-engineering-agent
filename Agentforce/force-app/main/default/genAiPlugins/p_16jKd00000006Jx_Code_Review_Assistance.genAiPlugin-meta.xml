@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Use this topic to provide automated code review suggestions and checks.</description>
+    <developerName>p_16jKd00000006Jx_Code_Review_Assistance</developerName>
+    <genAiFunctions>
+        <functionName>Search_GitHub_Code</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the query is about searching for code, use Search_GitHub_Code.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Code Review Assistance</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only assist users with code review suggestions and checks by searching for relevant code.</scope>
+</GenAiPlugin>

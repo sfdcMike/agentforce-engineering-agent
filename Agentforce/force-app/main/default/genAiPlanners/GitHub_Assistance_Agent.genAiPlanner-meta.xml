@@ -5,6 +5,9 @@
         <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
     </genAiFunctions>
     <genAiPlugins>
+        <genAiPluginName>Salesforce_CLI_Actions</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
         <genAiPluginName>Slack__Slack</genAiPluginName>
     </genAiPlugins>
     <genAiPlugins>

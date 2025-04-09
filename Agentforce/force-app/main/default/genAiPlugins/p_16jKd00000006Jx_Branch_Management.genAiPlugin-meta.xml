@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Use this topic to assist users with creating, merging, and deleting branches.</description>
+    <developerName>p_16jKd00000006Jx_Branch_Management</developerName>
+    <genAiFunctions>
+        <functionName>Merge_GitHub_Pull_Request</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the query is about merging a pull request, use Merge_GitHub_Pull_Request.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Branch Management</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only assist users with tasks related to branch creation, merging, and deletion.</scope>
+</GenAiPlugin>
