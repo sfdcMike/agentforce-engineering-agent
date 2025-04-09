@@ -1,0 +1,28 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "error_message" : {
+      "title" : "error_message",
+      "description" : "Error message if the request failed",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "repositories" : {
+      "title" : "repositories",
+      "description" : "List of repositories matching the criteria",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "@apexClassType/c__GetGitHubRepositoriesAction$RepositoryInfo"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

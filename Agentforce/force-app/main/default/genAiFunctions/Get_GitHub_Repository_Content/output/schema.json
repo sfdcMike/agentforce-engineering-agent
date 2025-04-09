@@ -1,0 +1,37 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "content" : {
+      "title" : "content",
+      "description" : "Content information for the requested path",
+      "lightning:type" : "@apexClassType/c__GetGitHubRepositoryContentAction$ContentInfo",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "directory_contents" : {
+      "title" : "directory_contents",
+      "description" : "List of contents if the path is a directory",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "@apexClassType/c__GetGitHubRepositoryContentAction$ContentInfo"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "error_message" : {
+      "title" : "error_message",
+      "description" : "Error message if the request failed",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,49 @@
+{
+  "required" : [ "owner", "pull_number", "repo" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "idle_timeout_minutes" : {
+      "title" : "idle_timeout_minutes",
+      "description" : "Idle timeout in minutes",
+      "lightning:type" : "lightning__integerType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "location" : {
+      "title" : "location",
+      "description" : "Location for the codespace",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "machine" : {
+      "title" : "machine",
+      "description" : "The machine type to use for the codespace",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "owner" : {
+      "title" : "owner",
+      "description" : "The owner of the repository",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "pull_number" : {
+      "title" : "pull_number",
+      "description" : "The pull request number",
+      "lightning:type" : "lightning__integerType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "repo" : {
+      "title" : "repo",
+      "description" : "The name of the repository",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

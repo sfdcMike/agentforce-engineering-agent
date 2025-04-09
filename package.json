@@ -1,0 +1,12 @@
+{
+  "name": "root-heroku-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "cd Agentforce/LLMConnector && node server.js",
+    "postinstall": "cd Agentforce/LLMConnector && npm install"
+  },
+  "dependencies": {},
+  "heroku": {
+    "build": "cd Agentforce/LLMConnector"
+  }
+}

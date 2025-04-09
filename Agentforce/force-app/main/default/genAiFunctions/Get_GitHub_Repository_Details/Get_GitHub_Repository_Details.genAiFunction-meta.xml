@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Retrieves detailed information about a specific GitHub repository</description>
+    <invocationTarget>GetGitHubRepositoryAction</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Get GitHub Repository Details</masterLabel>
+    <progressIndicatorMessage>Retrieves detailed information about a specific GitHub repository</progressIndicatorMessage>
+</GenAiFunction>

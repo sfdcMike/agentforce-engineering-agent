@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Use this topic to assist users in creating and maintaining GitHub repositories.</description>
+    <developerName>p_16jKd00000006Jx_Repository_Management</developerName>
+    <genAiFunctions>
+        <functionName>Get_GitHub_Repository_Details</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_GitHub_Repository_Content</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the query is about retrieving repository details, use Get_GitHub_Repository_Details.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the query is about retrieving repository content, use Get_GitHub_Repository_Content.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Repository Management</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only help users with tasks related to creating and managing repositories. This includes retrieving repository details and content.</scope>
+</GenAiPlugin>

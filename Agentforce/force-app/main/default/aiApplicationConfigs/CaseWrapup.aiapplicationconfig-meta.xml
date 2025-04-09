@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AIApplicationConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiApplicationDeveloperName>CaseWrapup</aiApplicationDeveloperName>
+    <applicationId>0PpKd000000lyqZ</applicationId>
+    <developerName>CaseWrapup</developerName>
+    <insightReasonEnabled>false</insightReasonEnabled>
+    <masterLabel>CaseWrapup</masterLabel>
+    <rank>1</rank>
+    <scoringMode>OnDemand</scoringMode>
+</AIApplicationConfig>

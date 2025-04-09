@@ -1,0 +1,42 @@
+{
+  "required" : [ "pull_number", "repository" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "merge_commit_message" : {
+      "title" : "merge_commit_message",
+      "description" : "Message for the merge commit",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "merge_commit_title" : {
+      "title" : "merge_commit_title",
+      "description" : "Title for the merge commit",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "merge_method" : {
+      "title" : "merge_method",
+      "description" : "Merge method to use (merge, squash, rebase)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "pull_number" : {
+      "title" : "pull_number",
+      "description" : "The number that identifies the PR",
+      "lightning:type" : "lightning__integerType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "repository" : {
+      "title" : "repository",
+      "description" : "Repository containing the PR (format: owner/repo)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

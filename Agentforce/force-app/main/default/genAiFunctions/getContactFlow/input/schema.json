@@ -1,0 +1,21 @@
+{
+  "required" : [ "varFirstName", "varLastName" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "varFirstName" : {
+      "title" : "varFirstName",
+      "description" : "First name of contact",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "varLastName" : {
+      "title" : "varLastName",
+      "description" : "last name of contact",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

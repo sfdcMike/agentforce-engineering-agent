@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Use this topic to automate the creation and tracking of pull requests.</description>
+    <developerName>p_16jKd00000006Jx_Pull_Request_Automation</developerName>
+    <genAiFunctions>
+        <functionName>Create_GitHub_Codespace_from_Pull_Request</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_GitHub_Repository_Pull_Requests</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Update_GitHub_Pull_Request</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the query is about creating a new codespace from a pull request, use Create_GitHub_Codespace_from_Pull_Request.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the query is about retrieving pull requests, use Get_GitHub_Repository_Pull_Requests.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the query is about updating a pull request, use Update_GitHub_Pull_Request.</description>
+        <developerName>instruction_2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_2</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Pull Request Automation</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only assist users with creating, updating, and tracking pull requests.</scope>
+</GenAiPlugin>

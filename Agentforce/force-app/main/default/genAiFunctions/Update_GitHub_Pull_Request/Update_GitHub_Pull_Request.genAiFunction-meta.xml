@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Updates a GitHub pull request</description>
+    <invocationTarget>UpdateGitHubPRAction</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Update GitHub Pull Request</masterLabel>
+    <progressIndicatorMessage>Updates a GitHub pull request</progressIndicatorMessage>
+</GenAiFunction>
